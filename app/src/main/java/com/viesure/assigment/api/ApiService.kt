@@ -8,8 +8,7 @@ import retrofit2.http.GET
 
 
 interface ApiService {
-    //@GET("/")
-    @GET("https://run.mocky.io/v3/eebcc40c-4599-4f05-bdf8-1307e63b6072")
+    @GET("/")
     fun getBooks(): Deferred<Response<BookDetailsResponse>>
 
 }

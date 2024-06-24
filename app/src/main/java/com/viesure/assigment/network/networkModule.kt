@@ -37,7 +37,7 @@ object NetworkModule {
     @Singleton
     fun provideRetrofit(retryInterceptor: RetryInterceptor): Retrofit {
         val okHttpClient = OkHttpClient.Builder()
-            //.addInterceptor(retryInterceptor)
+            .addInterceptor(retryInterceptor)
             .addInterceptor(loggingInterceptor)
             .connectTimeout(30, TimeUnit.SECONDS)
             .readTimeout(30, TimeUnit.SECONDS)
