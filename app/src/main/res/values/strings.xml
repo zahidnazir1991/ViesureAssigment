@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Assignment</string>
+    <string name="string_main">Books Listing</string>
+    <string name="string_details">Book Details</string>
+    <string name="string_error">Error</string>
+
+</resources>
